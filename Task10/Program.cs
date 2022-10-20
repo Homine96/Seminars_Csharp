@@ -1,15 +1,14 @@
 ﻿/* Задача 10. Напишите программу , которая на вход принимает трехзначное число и 
 на выходе показывает вторую цифру этого числа*/
 
-Console.Write("Введите трехзначное число:   ");
-int num =Convert.ToInt32(Console.ReadLine());
-
 int Number2(int num)
 {
-    int a = num / 10;
-    int b = a %10;
-    return b;
+    return num / 10 % 10;
 }
 
-int number2=Number2(num);
-Console.WriteLine($"Вторая цифра {number2}");
+Console.Write("Введите трехзначное число:   ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number < 100 || number > 999)  Console.WriteLine("Введено неправильное число");
+else Console.WriteLine($"Вторая цифра {Number2(number)}");
+
