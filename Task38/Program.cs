@@ -47,6 +47,5 @@ double Min(double[] arr)
 double[] massiv = CreateArrayRndInt(5, 0, 15);
 PrintArray(massiv);
 
-double max = Max(massiv);
-double min = Min(massiv);
-Console.Write($"Разница между максимальным элементом массива {Max(massiv)} и минимальным {Min(massiv)} = {max-min} ");
+
+Console.Write($"Разница между максимальным элементом массива {Max(massiv)} и минимальным {Min(massiv)} = {Max(massiv)-Min(massiv)} ");
