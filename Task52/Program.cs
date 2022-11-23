@@ -67,6 +67,6 @@ void PrintArray(double[] arr)
 int [,] array=CreateMatrixRndInt(3,4,1,9);
 Console.WriteLine("Задан двумерный массив 3х4 ");
 PrintMatrix(array);
-double [] array2=(SrArifmet(array));
+double [] array2=SrArifmet(array);
 Console.Write("Среднее арифметическое каждого столбца в массиве равно : ");
 PrintArray(array2);
